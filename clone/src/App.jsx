@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
 import data from "./data";
+import GitHubButton from "./components/GitHubButton";
 
 export default function App() {
     const cards = data.map(item => (
@@ -19,6 +20,7 @@ export default function App() {
             <section className="cards-list">
                 {cards}
             </section>
+            <GitHubButton />
         </div>
     );
 }
